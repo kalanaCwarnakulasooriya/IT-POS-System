@@ -21,6 +21,42 @@
     </ul>
   </header>
 
+  <!------------------- Home section ------------------->
+  <section id="homePage">
+    <div>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/assests/img/POS-Carousel-Image-1.png"
+              alt="Food market image"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assests/img/POS-Carousel-Image-2.png"
+              alt="Customer in the market image"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assests/img/POS-Carousel-Image-3.png"
+              alt="Grocery items image"
+            />
+          </div>
+        </div>
+
+        <button class="carousel-control prev" onclick="prevSlide()">
+          &#10094;
+        </button>
+        <button class="carousel-control next" onclick="nextSlide()">
+          &#10095;
+        </button>
+      </div>
+    </div>
+  </section>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="/controller/IndexController.js"></script>
 </body>
 </html>

@@ -50,3 +50,76 @@ header ul li:hover {
 header ul li a {
   color: #ffffff;
 }
+
+section > div {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  font-size: 18px;
+  padding: 1vw;
+}
+
+section > :first-child > div {
+  margin-top: 8vh;
+}
+
+#homePage > div {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border-radius: 20px;
+  border: none;
+  color: #313131;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all ease-in-out 0.25s;
+}
+
+.carousel-control:hover {
+  background-color: #ffffff56;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
