@@ -123,3 +123,84 @@ section > :first-child > div {
 .carousel-control.next {
   right: 10px;
 }
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 34px;
+}
+
+form div input,
+select {
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+}
+
+.buttons {
+  flex-direction: row;
+  font-size: 18px !important;
+  /* gap: 0; */
+}
+
+.buttons button {
+  padding: 19px 28px;
+  background-color: #c4c4c4;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all ease-in-out 0.25s;
+}
+
+.buttons > :first-child:hover {
+  background-color: #56abf6;
+  border-radius: 12px;
+}
+
+.buttons > :nth-child(2):hover {
+  background-color: #db3843;
+  border-radius: 12px;
+}
+
+.buttons > :nth-child(3):hover {
+  background-color: #dcaa13;
+  border-radius: 12px;
+}
+
+.buttons > :nth-child(4):hover {
+  background-color: #24a746;
+  border-radius: 12px;
+}
+
+.buttons > :last-child:hover {
+  background-color: #d43a40;
+  border-radius: 12px;
+}
+
+#CustomerManage table,
+#ItemManage table {
+  margin-left: 50px;
+  border-collapse: collapse;
+}
+
+#CustomerManage th,
+#CustomerManage td,
+#ItemManage th,
+#ItemManage td {
+  border: 1px solid #c4c4c4;
+  width: 20vw;
+  height: 4vw;
+  text-align: center;
+}
+
+#CustomerManage th,
+#ItemManage th {
+  background-color: #000000;
+  color: #eaeaea;
+}
+
+section {
+  display: none;
+  background: #f2f2f2;
+}

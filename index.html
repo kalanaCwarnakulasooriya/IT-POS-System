@@ -56,7 +56,62 @@
     </div>
   </section>
 
+   <!------------------- Customer section ------------------->
+   <section id="CustomerManage">
+    <div>
+      <div>
+        <h1 class="title">Customer Registration</h1>
+
+        <form id="customerForm">
+          <div>
+            <label for="">Customer Id</label>
+            <input type="text" class="custId" />
+            <h5 class="invalidCustId"></h5>
+          </div>
+          <div>
+            <label for="">Customer Name</label>
+            <input type="text" class="custName" />
+            <h5 class="invalidCustName"></h5>
+          </div>
+          <div>
+            <label for="">Customer Address</label>
+            <input type="text" class="custAddress" />
+            <h5 class="invalidCustAddress"></h5>
+          </div>
+          <div>
+            <label for="">Customer Salary</label>
+            <input type="number" class="custSalary" />
+            <h5 class="invalidCustSalary"></h5>
+          </div>
+
+          <div class="buttons">
+            <button type="submit" class="saveBtn">Save Customer</button>
+            <button class="removeBtn">Remove</button>
+            <button class="updateBtn">Update</button>
+            <button class="searchBtn">GetAll</button>
+            <button class="clearBtn">Clear All</button>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Customer Id</th>
+              <th>Customer Name</th>
+              <th>Customer Address</th>
+              <th>Customer Salary</th>
+            </tr>
+          </thead>
+          <tbody class="tableRow"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="/controller/IndexController.js"></script>
+  <script type="module" src="/controller/CustomerController.js"></script>
 </body>
 </html>
