@@ -13,3 +13,18 @@ export let Customers = [
     custSalary: "22000",
   },
 ];
+
+export let Items = [
+  {
+    itemId: "I01",
+    itemName: "lankasoi",
+    itemQty: 10,
+    itemPrice: 90,
+  },
+  {
+    itemId: "I02",
+    itemName: "mari",
+    itemQty: 50,
+    itemPrice: 150,
+  },
+];
