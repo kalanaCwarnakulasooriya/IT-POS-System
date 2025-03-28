@@ -8,8 +8,8 @@ export let Customers = [
 
   {
     custId: "C02",
-    custName: "Nishantha",
-    custAddress: "Matara",
+    custName: "Abishek",
+    custAddress: "Kandy",
     custSalary: "22000",
   },
 ];
@@ -17,14 +17,16 @@ export let Customers = [
 export let Items = [
   {
     itemId: "I01",
-    itemName: "lankasoi",
+    itemName: "Biscuits",
     itemQty: 10,
     itemPrice: 90,
   },
   {
     itemId: "I02",
-    itemName: "mari",
+    itemName: "Shampoo",
     itemQty: 50,
     itemPrice: 150,
   },
 ];
+
+export let Orders = [];
