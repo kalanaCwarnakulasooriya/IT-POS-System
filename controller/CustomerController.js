@@ -42,7 +42,7 @@ $("#CustomerManage .saveBtn").click(function () {
 function validate(customer) {
   let valid = true;
 
-  if (/^C0[0-9]+$/.test(customer.custId)) {
+  if (/^#C00[0-9]+$/.test(customer.custId)) {
     $("#CustomerManage .invalidCustId").text("");
     valid = true;
   } else {
@@ -96,19 +96,19 @@ function createCustomerId() {
   let customers = getAllCustomers();
 
   if (!customers || customers.length === 0) {
-    return "C01";
+    return "#C001";
   } else {
     let lastCustomer = customers[customers.length - 1];
-    let id = lastCustomer && lastCustomer.custId ? lastCustomer.custId : "C00";
+    let id = lastCustomer && lastCustomer.custId ? lastCustomer.custId : "#C00";
 
     let number = extractNumber(id);
     number++;
-    return "C0" + number;
+    return "#C00" + number;
   }
 }
 
 function extractNumber(id) {
-  var match = id.match(/C0(\d+)/);
+  var match = id.match(/#C00(\d+)/);
   if (match && match.length > 1) {
     return parseInt(match[1]);
   }

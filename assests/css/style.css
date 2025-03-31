@@ -43,8 +43,8 @@ header ul li {
   transition: all ease-in-out 0.25s;
 }
 
-header ul li:hover {
-  background-color: #1d1d1d;
+header ul li a:hover {
+  color: #e0ce0d;
 }
 
 header ul li a {
@@ -150,7 +150,7 @@ select {
 }
 
 .buttons button {
-  padding: 19px 28px;
+  padding: 12px 21px;
   background-color: #c4c4c4;
   border: 1px solid transparent;
   border-radius: 100px;
@@ -316,7 +316,7 @@ section {
 }
 
 .TotalCal button {
-  padding: 20px 30px;
+  padding: 15px 30px;
   border: 1px solid #c4c4c4;
   cursor: pointer;
   background-color: #13792e;
@@ -352,7 +352,7 @@ section {
 .tableRows > div > div {
   width: 18vw;
   height: 4vw;
-  border: 1px solid #c4c4c4;
+  border: 1px solid #2c2b2b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,7 +376,6 @@ h5 {
   position: absolute;
   margin-top: 7.8vh;
 }
-/* Responsive Media Queries */
 
 /* Mobile Small (320px) */
 @media screen and (max-width: 320px) {
@@ -447,7 +446,6 @@ h5 {
 
 /* Mobile Medium (375px) */
 @media screen and (min-width: 321px) and (max-width: 375px) {
-  /* Similar adjustments to small mobile, with slightly less aggressive changes */
   header ul {
     width: 100%;
   }
@@ -461,7 +459,6 @@ h5 {
 
 /* Mobile Large (425px) */
 @media screen and (min-width: 376px) and (max-width: 425px) {
-  /* Moderate responsive adjustments */
   header ul {
     width: 100%;
     justify-content: center;
@@ -508,6 +505,7 @@ h5 {
     grid-template-columns: 35% 65%;
   }
 }
+
 /* Order Manage Responsive Styles */
 
 @media screen and (max-width: 768px) {
@@ -575,6 +573,7 @@ h5 {
     margin-top: 15px;
   }
 }
+
 /* Header Responsive Styles */
 
 @media screen and (max-width: 768px) {

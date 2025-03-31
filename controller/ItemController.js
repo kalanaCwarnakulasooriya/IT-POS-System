@@ -40,7 +40,7 @@ $("#ItemManage .saveBtn").click(function () {
 function validate(item) {
   let valid = true;
 
-  if (/^I0[0-9]+$/.test(item.itemId)) {
+  if (/^#I00[0-9]+$/.test(item.itemId)) {
     $("#ItemManage .invalidCode").text("");
     valid = true;
   } else {
@@ -125,19 +125,19 @@ function generateId() {
   let items = getAllItems();
 
   if (!items || items.length == 0) {
-    return "I01";
+    return "#I001";
   } else {
     let lastItem = items[items.length - 1];
     console.log(lastItem);
     let number = extractNumber(lastItem.itemId);
     console.log(number);
     number++;
-    return "I0" + number;
+    return "#I00" + number;
   }
 }
 
 function extractNumber(id) {
-  var match = id.match(/I0(\d+)/);
+  var match = id.match(/#I00(\d+)/);
   if (match && match.length > 1) {
     return match[1];
   }

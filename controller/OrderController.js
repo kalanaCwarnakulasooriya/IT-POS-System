@@ -26,17 +26,17 @@ function generateId() {
   let orders = getAllOrders();
 
   if (orders.length === 0) {
-    return "OD01";
+    return "#100-O001";
   } else {
     let orderId = orders[orders.length - 1].orderId;
     let number = extractNumber(orderId);
     number++;
-    return "OD0" + number;
+    return "#100-O00" + number;
   }
 }
 
 function extractNumber(id) {
-  var match = id.match(/OD(\d+)/);
+  var match = id.match(/#100-O(\d+)/);
   if (match && match.length > 1) {
     return match[1];
   }
